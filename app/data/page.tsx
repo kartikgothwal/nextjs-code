@@ -4,9 +4,9 @@ import { ReactElement, useEffect, useState } from "react";
 const Page = (): ReactElement => {
   const [fetchData, SetFetchData] = useState<any>();
   const getDataValues = async () => {
-  const response = await fetch("https://dummyjson.com/products");
-  const data = await response.json();
-  SetFetchData(data.products);
+    const response = await fetch("https://dummyjson.com/products");
+    const data = await response.json();
+    SetFetchData(data.products);
   };
   useEffect(() => {
     getDataValues();
