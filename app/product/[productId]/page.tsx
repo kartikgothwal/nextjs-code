@@ -1,5 +1,7 @@
 import React from "react";
-
+export const Ratio = () => {
+  return "hello";
+};
 const Product = ({
   params,
 }: {
@@ -10,4 +12,4 @@ const Product = ({
   return <div>Type is {params.productId}</div>;
 };
 
-export default Product;
+export default Ratio;
