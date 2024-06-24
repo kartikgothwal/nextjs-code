@@ -12,7 +12,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-       <h1 className="block mx-10"> hapy birthday</h1>
+        <h1 className="block mx-10">hapy reviews</h1>
       </body>
     </html>
   );
