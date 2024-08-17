@@ -1,11 +1,12 @@
-import React from 'react'
+import Card from "@/app/components/cards";
+import React from "react";
 
-const page = () => {
+const LoginSlot = () => {
   return (
-    <div>
-      please login to continue
-    </div>
-  )
-}
+    <Card>
+      <h1>Login dashboard</h1>
+    </Card>
+  );
+};
 
-export default page
+export default LoginSlot;

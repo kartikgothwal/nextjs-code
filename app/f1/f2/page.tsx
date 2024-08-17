@@ -1,11 +1,13 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <div>
-      f2 routes
+      <h1>F2 route</h1>
+      <Link href={"/f1/f2"}>F2 folder</Link>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;

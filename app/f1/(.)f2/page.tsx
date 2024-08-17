@@ -1,7 +1,11 @@
 import React from "react";
 
-const page = () => {
-  return <div>f2 intercerpted routes</div>;
+const InterceptingF2 = () => {
+  return (
+    <div>
+      <h1>Intercepting F2 route</h1>
+    </div>
+  );
 };
 
-export default page;
+export default InterceptingF2;

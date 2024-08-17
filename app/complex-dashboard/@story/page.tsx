@@ -1,10 +1,14 @@
-import React from "react";
+"use client";
+import Card from "@/app/components/cards";
+import React, { useState } from "react";
 
 const Page = () => {
+  const [text, setText] = useState("this is the text");
+
   return (
-    <div>
-      <h1>Story</h1>
-    </div>
+    <Card>
+      <h1>Story {text}</h1>
+    </Card>
   );
 };
 

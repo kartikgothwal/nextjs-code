@@ -2,26 +2,31 @@ import React from "react";
 
 const layout = ({
   children,
-  contact,
+  notifications,
   revenue,
   story,
+  login,
 }: {
   children: React.ReactNode;
   revenue: React.ReactNode;
-  contact: React.ReactNode;
+  notifications: React.ReactNode;
   story: React.ReactNode;
+  login: React.ReactNode;
 }) => {
-  return (
+  const isLogin = false;
+  return isLogin ? (
     <div>
       <h1>{children}</h1>
       <div style={{ display: "flex" }}>
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div>{revenue}</div>
-          <div>{contact}</div>
+          <div>{story}</div>
         </div>
-        <div style={{ display: "flex", flex: 1 }}>{story}</div>
+        <div style={{ display: "flex", flex: 1 }}>{notifications}</div>
       </div>
     </div>
+  ) : (
+    <div>{login}</div>
   );
 };
 

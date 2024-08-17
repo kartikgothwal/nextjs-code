@@ -1,14 +1,16 @@
-import Card from '@/app/components/cards'
-import Link from 'next/link'
-import React from 'react'
+import Card from "@/app/components/cards";
+import Link from "next/link";
+import React from "react";
 
 const Page = () => {
   return (
     <Card>
-      deafult Notifications
-      <Link href={"/complex-dashboard/archived"}>Archiced</Link>
+      <h1>default Notifications</h1>
+      <Link className="text-blue-600" href={"/complex-dashboard/archive"}>
+        Archieved
+      </Link>
     </Card>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

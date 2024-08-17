@@ -1,11 +1,14 @@
-import React from 'react'
+"use client";
+import Card from "@/app/components/cards";
+import React, { useState } from "react";
 
 const Page = () => {
+  const [count, setCount] = useState(0);
   return (
-    <div>
-      <h1>Revenue</h1>
-    </div>
-  )
-}
+    <Card>
+      <h1>Revenue {count}</h1>
+    </Card>
+  );
+};
 
-export default Page
+export default Page;
