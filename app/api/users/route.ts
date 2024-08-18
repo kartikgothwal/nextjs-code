@@ -1,16 +1,23 @@
 import { users } from "@/app/db/db";
+import { headers, headers } from "next/headers";
 
 // export function GET() {
 //   return Response.json({ data: users, message: "Data successfully fetched" });
 // }
+// export function GET(request: Request) {
+//   const searchParams = request.nextUrl.searchParams;
+//   const address = searchParams.get("address");
+//   const data = users.filter((item) => item.address.address.includes(address));
+//   return data.length
+//     ? Response.json({ name: "Found" })
+//     : Response.json({ name: "Not Found" });
+// }
 export function GET(request: Request) {
-  const searchParams = request.nextUrl.searchParams;
-  const address = searchParams.get("address");
-  const data = users.filter((item) => item.address.address.includes(address));
-
-  return data.length > 0
-    ? Response.json({ data: data, message: "Result found" })
-    : Response.json({ message: "No Result found" });
+  const requestHeaders = new Headers(request.headers);
+  const auth = requestHeaders.get("Authorization");
+  const headerList = headers();
+  const head = headerList.get("Authorization");
+  return Response.json({ data: users, message: "Data successfully fetched" });
 }
 export async function POST(request: Request) {
   const payload = await request.json();

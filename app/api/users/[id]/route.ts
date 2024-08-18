@@ -7,6 +7,9 @@ export async function GET(
   const {
     params: { id },
   } = context;
+  if (users.length < Number(id)) {
+    return Response.json({ message: "No result found" }, { status: 300 });
+  }
   const target = users.find((item) => item.id === Number(id));
   return Response.json({ target }, { status: 200 });
 }
