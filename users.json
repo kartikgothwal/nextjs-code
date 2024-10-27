@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Arjun Mehta",
+      "email": "arjun.mehta@example.com",
+      "age": 30,
+      "location": "Delhi"
+    },
+    {
+      "id": 2,
+      "name": "Priya Sharma",
+      "email": "priya.sharma@example.com",
+      "age": 28,
+      "location": "Mumbai"
+    },
+    {
+      "id": 3,
+      "name": "Rahul Gupta",
+      "email": "rahul.gupta@example.com",
+      "age": 32,
+      "location": "Bangalore"
+    },
+    {
+      "id": 4,
+      "name": "Anjali Verma",
+      "email": "anjali.verma@example.com",
+      "age": 25,
+      "location": "Chennai"
+    },
+    {
+      "id": 5,
+      "name": "Vikram Singh",
+      "email": "vikram.singh@example.com",
+      "age": 29,
+      "location": "Hyderabad"
+    },
+    {
+      "id": 6,
+      "name": "Sneha Patel",
+      "email": "sneha.patel@example.com",
+      "age": 27,
+      "location": "Ahmedabad"
+    },
+    {
+      "id": 7,
+      "name": "Ravi Kumar",
+      "email": "ravi.kumar@example.com",
+      "age": 35,
+      "location": "Pune"
+    },
+    {
+      "id": 8,
+      "name": "Nisha Rao",
+      "email": "nisha.rao@example.com",
+      "age": 26,
+      "location": "Kolkata"
+    },
+    {
+      "id": 9,
+      "name": "Rohan Desai",
+      "email": "rohan.desai@example.com",
+      "age": 31,
+      "location": "Jaipur"
+    },
+    {
+      "id": 10,
+      "name": "Maya Kapoor",
+      "email": "maya.kapoor@example.com",
+      "age": 24,
+      "location": "Lucknow"
+    }
+  ]
+}
