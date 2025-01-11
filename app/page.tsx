@@ -5,8 +5,9 @@ export const metadata:Metadata={
   description:"Description"
 }
 export default function Home() {
-  throw new Error("This is an error");
-  return (
+
+   return (
    <h1>Hello world</h1>
+
   );
 }

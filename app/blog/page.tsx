@@ -1,15 +1,13 @@
-import { Metadata } from "next";
-import Link from "next/link";
+"use client";
 
-export const metadata: Metadata = {
-  title: "blogs",
-  description: "interview",
-};
 const Page = () => {
+  const num: number = Math.floor(Math.random() * 10);
+  if (num > 5) {
+    throw new Error("Error in blogs");
+  }
   return (
     <div>
-      <h1>Hello blogs</h1>
-      <Link href="/">blgos page</Link>
+      <h1>Blogs page</h1>
     </div>
   );
 };
