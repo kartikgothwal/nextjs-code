@@ -1,4 +1,5 @@
 import axios from "axios";
+import { redirect } from "next/navigation";
 import { NextRequest, NextResponse } from "next/server";
 
 export async function GET(
@@ -7,6 +8,9 @@ export async function GET(
 ) {
   const { id }: { id: string } = params;
   const res = await axios.get(`http://localhost:5000/users/${id}`);
+  if (!res.data) {
+    return redirect("/api/users");
+  }
   return NextResponse.json({ data: res.data }, { status: 200 });
 }
 
@@ -32,7 +36,7 @@ export async function PUT(
     const { id }: { id: string } = params;
     const payload = await request.json();
     const res = await axios.put(`http://localhost:5000/users/${id}`, payload);
-    
+
     return NextResponse.json({ data: res.data }, { status: 200 });
   } catch (error: { error: { message: string } }) {
     console.log("🚀 ~ POST ~ error:", error);

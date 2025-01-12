@@ -1,5 +1,24 @@
 {
-  "users": [],
+  "users": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "fodu",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "lodu",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "lodu",
+      "completed": true
+    }
+  ],
   "comments": [
     {
       "postId": 1,
@@ -30,6 +49,4 @@
       "body": "It is not and, in fact, we who hate the accusers have the results of our cases. Because the pleasures are he who desires the pain."
     }
   ]
-
-
 }
